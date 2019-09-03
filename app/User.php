@@ -30,4 +30,9 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+    
+    public function findForPassport($identifier)
+    {
+        return $this->orWhere(‘cpf’, $identifier)->orWhere(‘email’, $identifier)->first();
+    }
 }

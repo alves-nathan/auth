@@ -81,6 +81,8 @@ $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
+
+$app->configure('auth');
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
