@@ -64,7 +64,7 @@ return [
             'driver' => 'eloquent',
             'model' => \App\User::class
         ]
-    ],
+    ]
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,5 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-
-    'passwords' => [
-        //
-    ],
 
 ];
